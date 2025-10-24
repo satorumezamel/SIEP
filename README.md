@@ -45,6 +45,12 @@ Interpreting Results
 
 ⸻
 
+For a detailed step-by-step replication guide, see the document
+Step-by-Step Protocol for Reproducible EEG–Quantum Nonlocal Correlation Experiments.
+It provides full environment setup (EEG, AWS Braket, and local Python) and analysis instructions for reproducing the nonlocal correlation experiment.
+
+⸻
+
 Reference Preprint
 
 Experimental Evidence of Nonlocal EEG-Quantum State Correlations: A Novel Empirical Approach to the Hard Problem of Consciousness
