@@ -1,0 +1,64 @@
+# Techniques for Maintaining the Counter in the Notebook Environment
+if 'experiment_counter' not in globals():
+    experiment_counter = 0
+experiment_counter += 1
+
+from braket.aws import AwsDevice
+from braket.circuits import Circuit
+from braket.pulse import PulseSequence, Frame, Port
+from braket.device_schema.rigetti.rigetti_device_parameters_v1 import RigettiDeviceParameters
+
+device = AwsDevice("arn:aws:braket:us-west-1::device/qpu/rigetti/Ankaa-3")
+
+small_angle_rx = 0.05
+small_angle_cry = 0.05
+
+circuit = Circuit()
+circuit.h(38)
+circuit.rx(38, small_angle_rx)
+circuit.h(39)
+circuit.cnot(38, 39).ry(39, small_angle_cry / 2)
+circuit.cnot(38, 39).ry(39, -small_angle_cry / 2)
+
+port_38 = Port(port_id='q38_QRRx2Channel-0', dt=1e-9, properties=None)
+port_39 = Port(port_id='q39_QRRx2Channel-0', dt=1e-9, properties=None)
+
+frame_38 = Frame(
+    frame_id='Transmon_38_readout_rx',
+    port=port_38,
+    frequency=7296975715.952661
+)
+
+frame_39 = Frame(
+    frame_id='Transmon_39_readout_rx',
+    port=port_39,
+    frequency=7461668250.311123
+)
+
+pulse_sequence = PulseSequence().delay(
+    qubits_or_frames=[frame_38, frame_39],
+    duration=40e-6
+)
+
+device_parameters = RigettiDeviceParameters(
+    paradigmParameters={
+        "qubitCount": 82,
+        "pulseSequence": pulse_sequence.to_ir()
+    }
+)
+
+s3_folder = ("amazon-braket-us-east-1-265556963750", "tasks")
+
+task = device.run(
+    circuit,
+    shots=100,
+    device_parameters=device_parameters,
+    s3_destination_folder=s3_folder
+)
+
+result = task.result()
+
+print(f"Experiment #{experiment_counter}")
+print("Measurement Counts:", result.measurement_counts)
+
+# Don't forget EEG Recording!!!

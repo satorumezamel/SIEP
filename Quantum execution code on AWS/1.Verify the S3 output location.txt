@@ -1,0 +1,15 @@
+from braket.aws import AwsDevice
+from braket.circuits import Circuit
+
+device = AwsDevice("arn:aws:braket:::device/quantum-simulator/amazon/sv1")
+circuit = Circuit().h(0).measure(0)
+
+task = device.run(circuit, shots=100)
+result = task.result()
+
+print(result.measurement_counts)
+
+# Verify the S3 Output Location
+metadata = task.metadata()
+print("S3 bucket:", metadata['outputS3Bucket'])
+print("S3 folder:", metadata['outputS3Directory'])

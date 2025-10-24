@@ -1,0 +1,32 @@
+import boto3
+from braket.aws import AwsQuantumTask
+
+# Create an AWS Braket client
+braket_client = boto3.client('braket', region_name='us-west-1')
+
+# Retrieve the 30 Most Recent Tasks (Filtered by Rigetti Ankaa-3 Device)
+response = braket_client.search_quantum_tasks(
+    filters=[
+        {'name': 'deviceArn', 'operator': 'EQUAL', 'values': ['arn:aws:braket:us-west-1::device/qpu/rigetti/Ankaa-3']}
+    ],
+    maxResults=30
+)
+
+
+tasks = response['quantumTasks']
+
+# Sort by start time
+tasks_sorted = sorted(tasks, key=lambda x: x['createdAt'])
+
+# Output sequentially numbered results in the specified format
+for i, task in enumerate(tasks_sorted, start=1):
+    task_id = task['quantumTaskArn'].split('/')[-1]
+    task_obj = AwsQuantumTask(task['quantumTaskArn'])
+    result = task_obj.result()
+    metadata = task_obj.metadata()
+
+    print(f"{i}. Task ID: {task_id}")
+    print(f"Measurement Counts: {result.measurement_counts}")
+    print(f"Task Start: {metadata.get('createdAt', 'N/A')}")
+    print(f"Task End: {metadata.get('endedAt', 'N/A')}")
+    print("-" * 40)
