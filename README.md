@@ -25,9 +25,6 @@ Conceptual Overview
 ⸻
 
 Step-by-Step Replication (Within One Hour)
-
-Detailed operational procedures are not included in this README.
-For full setup instructions—from EEG configuration and AWS Braket setup to Python-based data analysis—please refer to the document below:
 	•	Step-by-Step Guide for Reproducible EEG–Quantum Nonlocal Correlation Experiments
 	https://github.com/satorumezamel/SIEP/blob/8abb8a7bddba6154c01e9a51f095bc5199982150/Step-by-Step%20Guide.pdf
 
