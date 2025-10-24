@@ -35,9 +35,8 @@ For full setup instructions—from EEG configuration and AWS Braket setup to Pyt
 
 📦 Download Full Repository
 
-You can download the entire repository (all scripts, documents, and guides) as a ZIP file:
-
-👉 Download ZIP
+You can download the entire repository (all scripts, documents, and guides) :
+https://github.com/satorumezamel/SIEP/archive/refs/heads/main.zip
 
 ⸻
 
