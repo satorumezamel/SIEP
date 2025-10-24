@@ -8,25 +8,35 @@ By following the detailed step-by-step guide, anyone can set up the environment 
 ⸻
 
 Required Environment
-	•	EEG device: Muse S or Muse 2
-	•	EEG recording app: Mind Monitor (iOS / Android) with Dropbox for data storage
-	•	Quantum computing environment: Amazon Braket (AWS, region specified in the guide, e.g., us-east-1)
-	•	Local analysis environment: Python (Anaconda) + Jupyter Notebook
-	•	Shared codes in this repository: Python scripts and notebooks for quantum execution and correlation analysis
+
+EEG device: Muse S or Muse 2
+
+EEG recording app: Mind Monitor (iOS / Android) with Dropbox for data storage
+
+Quantum computing environment: Amazon Braket (AWS, region specified in the guide, e.g., us-east-1)
+
+Local analysis environment: Python (Anaconda) + Jupyter Notebook
+
+Shared codes in this repository: Python scripts and notebooks for quantum execution and correlation analysis
 
 ⸻
 
 Conceptual Overview
-	•	Two parallel but unconnected streams: EEG recording and quantum execution run simultaneously, but the quantum computer has no access to EEG data or timing.
-	•	Post-hoc analysis only: Correlations are computed after both datasets are collected (no real-time feedback).
-	•	Unexpected reproducibility: Statistically significant correlations (p < 0.05, after correction) repeatedly appear between quantum states (00, 01, 10, 11) and EEG frequency-band features (Delta, Theta, Alpha, Beta, Gamma; mean, peak, stability).
-	•	Interpretation: Such correlations are impossible under current physical theory, yet are reproducibly observed—supporting the Subjectivity Intersection hypothesis, which posits that consciousness itself is quantum-coherent and that a third observing subjectivity exists.
+
+Two parallel but unconnected streams: EEG recording and quantum execution run simultaneously, but the quantum computer has no access to EEG data or timing.
+
+Post-hoc analysis only: Correlations are computed after both datasets are collected (no real-time feedback).
+
+Unexpected reproducibility: Statistically significant correlations (p < 0.05, after correction) repeatedly appear between quantum states (00, 01, 10, 11) and EEG frequency-band features (Delta, Theta, Alpha, Beta, Gamma; mean, peak, stability).
+
+Interpretation: Such correlations are impossible under current physical theory, yet are reproducibly observed—supporting the Subjectivity Intersection hypothesis, which posits that consciousness itself is quantum-coherent and that a third observing subjectivity exists.
 
 ⸻
 
 Step-by-Step Replication (Within One Hour)
-	•	Step-by-Step Guide for Reproducible EEG–Quantum Nonlocal Correlation Experiments
-	https://github.com/satorumezamel/SIEP/blob/8abb8a7bddba6154c01e9a51f095bc5199982150/Step-by-Step%20Guide.pdf
+
+Step-by-Step Guide for Reproducible EEG–Quantum Nonlocal Correlation Experiments
+https://github.com/satorumezamel/SIEP/blob/8abb8a7bddba6154c01e9a51f095bc5199982150/Step-by-Step%20Guide.pdf
 
 ⸻
 
