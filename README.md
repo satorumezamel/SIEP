@@ -1,9 +1,28 @@
+# A Call to Participate in the Reproduction of the Nonlocal EEG–Quantum Experiment
+
+If this reproducible experiment continues to expand globally, it has the potential to rewrite the foundations of science itself.
+It challenges one of the deepest assumptions of modern physics—the separation between consciousness and the physical world—and shows that human subjectivity may play an active role in quantum phenomena.
+
+What makes this project truly extraordinary is that the barriers to participation are remarkably low.
+You don’t need a laboratory, a research institute, or advanced technical skills.
+With a simple EEG device, an AWS account, and a few lines of Python, anyone can become a direct witness to a phenomenon that transcends the limits of classical science.
+
+This is an open, collective inquiry—an invitation for all who are curious, courageous, and sincere in their search for truth.
+By joining this replication effort, you contribute to a living movement that could redefine what it means to observe, to know, and to exist.
+
+Join us in this frontier of consciousness and quantum reality.
+Together, we can illuminate the next paradigm of science.
+
+---
+
+
 # 🧠 Reproducible EEG–Quantum Nonlocal Correlation Experiments
 
 These are the world’s first procedures and Python codes demonstrating **reproducible nonlocal correlations** between human consciousness (EEG signals) and cloud-based quantum computation outcomes.  
 This protocol transcends the traditional separation of subjectivity and objectivity in science and even suggests the existence of a **third subjectivity** that observes the experiment itself.
 
 **By following the detailed step-by-step guide, anyone can set up the environment at home and reproduce the results in under one hour.**
+
 
 ---
 
