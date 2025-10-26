@@ -40,7 +40,7 @@ This protocol transcends the traditional separation of subjectivity and objectiv
 
 - Two parallel but unconnected streams: EEG recording and quantum execution run simultaneously, but the quantum computer has no access to EEG data or timing.  
 - Post-hoc analysis only: Correlations are computed after both datasets are collected (no real-time feedback).  
-- Unexpected reproducibility: Statistically significant correlations (p < 0.05, after correction) repeatedly appear between quantum states (00, 01, 10, 11) and EEG frequency-band features (Delta, Theta, Alpha, Beta, Gamma; mean, peak, stability). The maximum correlation as of October 25, 2025 was r = 0.754231, p = 0.000146. 
+- Unexpected reproducibility: Statistically significant correlations (p < 0.05, after correction) repeatedly appear between quantum states (00, 01, 10, 11) and EEG frequency-band features (Delta, Theta, Alpha, Beta, Gamma; mean, peak, stability). The highest nonlocal correlation measured so far between EEG and quantum computation is r = 0.754231, p = 0.000146 (n = 30) as of October 25, 2025.
 - Interpretation: Such correlations are impossible under current physical theory, yet are reproducibly observed — supporting the **Subjectivity Intersection Hypothesis**, which posits that consciousness itself is quantum-coherent and that a third observing subjectivity exists.  
 
 ---
