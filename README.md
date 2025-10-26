@@ -58,11 +58,12 @@ For complete setup, execution, and analysis instructions, please refer to the of
 
 You can download the entire repository (all scripts, documents, and guides) as a ZIP file:  
 
-- https://github.com/satorumezamel/SIEP/archive/refs/heads/main.zip  
+https://github.com/satorumezamel/SIEP/archive/refs/heads/main.zip  
 
 ---
 
 ## 📚 Reference Preprint
 
-- Experimental Evidence of Nonlocal EEG–Quantum State Correlations: A Novel Empirical Approach to the Hard Problem of Consciousness  
-  https://osf.io/preprints/osf/zcd45_v2  
+Experimental Evidence of Nonlocal EEG–Quantum State Correlations: A Novel Empirical Approach to the Hard Problem of Consciousness  
+
+https://osf.io/preprints/osf/zcd45_v2  
